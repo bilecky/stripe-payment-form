@@ -60,7 +60,7 @@ const StripeForm: React.FC = () => {
 		<div className='flex items-center justify-center h-screen bg-gray-200  tracking-wide'>
 			<form
 				onSubmit={handleSubmit}
-				className='w-[500px] h-[420px] max-w-xl p-8 bg-white rounded shadow-md'
+				className='w-[500px] h-[450px] max-w-xl p-8 bg-white rounded shadow-md'
 			>
 				<div className='mb-6'>
 					<label htmlFor='country' className='block text-gray-700 text-lg font-bold mb-2'>
