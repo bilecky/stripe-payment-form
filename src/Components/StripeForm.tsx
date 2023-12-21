@@ -72,7 +72,7 @@ const StripeForm: React.FC = () => {
 						onChange={handleCountryChange}
 						className='w-full py-2 px-3 text-gray-700 border rounded  focus:outline-none focus:shadow-outline'
 					>
-						<option selected>Wybierz kraj</option>
+						<option defaultValue={country}>Wybierz kraj</option>
 
 						<option value='PL'>Polska</option>
 						<option value='US'>USA</option>
