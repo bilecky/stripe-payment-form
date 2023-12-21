@@ -3,7 +3,7 @@ import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 
 const StripeForm: React.FC = () => {
 	const [country, setCountry] = useState('Wybierz kraj')
-	const [cardOwner, setCardOwner] = useState('Imię i Nazwisko')
+	const [cardOwner, setCardOwner] = useState('')
 	const [error, setError] = useState<string | null | undefined>(null)
 	const [paymentStatus, setPaymentStatus] = useState<string | null>(null)
 	const stripe = useStripe()
@@ -21,7 +21,7 @@ const StripeForm: React.FC = () => {
            setCardOwner('John Doe');
            break;
          case 'Wybierz kraj':
-           setCardOwner('Imie i Nazwisko');
+           setCardOwner('');
            break;
          default:
            // przy rozwinieciu apki defaultowy placeholder
@@ -86,6 +86,7 @@ const StripeForm: React.FC = () => {
 						Właściciel karty:
 					</label>
 					<input
+					placeholder='Imię Nazwisko'
 						id='card-owner'
 						type='text'
 						onChange={event => setCardOwner(event.target.value)}
