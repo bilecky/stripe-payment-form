@@ -70,7 +70,7 @@ const StripeForm: React.FC = () => {
 						id='country'
 						value={country}
 						onChange={handleCountryChange}
-						className='w-full py-3 px-3 text-gray-700 border rounded shadow  focus:outline-none focus:shadow-outline '
+						className='w-full py-3 px-3 text-gray-700 border rounded shadow  focus:outline-none focus:shadow-outline h-12 '
 					>
 						<option defaultValue={country}>Wybierz kraj</option>
 
@@ -90,7 +90,7 @@ const StripeForm: React.FC = () => {
 						type='text'
 						onChange={event => setCardOwner(event.target.value)}
 						value={cardOwner}
-						className='w-full py-3 px-3 text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline'
+						className='w-full py-3 px-3 text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline h-12 '
 					/>
 				</div>
 				<div className='mb-6'>
@@ -100,7 +100,7 @@ const StripeForm: React.FC = () => {
 					>
 						Dane karty:{' '}
 					</label>
-					<CardElement className='w-full py-3 px-3 text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline' />
+					<CardElement className='w-full pt-4 pb-3 px-3 text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline h-12  ' />
 				</div>
 				<button
 					type='submit'
